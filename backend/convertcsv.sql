@@ -1,8 +1,8 @@
 CREATE TABLE students(
-   MaSV     VARCHAR(8) NOT NULL PRIMARY KEY
-  ,HoTen    VARCHAR(22) NOT NULL
-  ,Lop      VARCHAR(7) NOT NULL
-  ,GioiTinh VARCHAR(3) NOT NULL
+   MaSV     VARCHAR(20) NOT NULL PRIMARY KEY
+  ,HoTen    VARCHAR(250) NOT NULL
+  ,Lop      VARCHAR(20) NOT NULL
+  ,GioiTinh VARCHAR(20) NOT NULL
   ,NgaySinh DATE  NOT NULL
 );
 INSERT INTO students(MaSV,HoTen,Lop,GioiTinh,NgaySinh) VALUES ('21661069','Trần Phạm Tuấn Anh','17CSI01','Nam',STR_TO_DATE('06/10/2003', '%d/%m/%Y'));

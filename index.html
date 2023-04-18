@@ -12,8 +12,8 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
 
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="assets/dist/css/jquery-ui.css">
-  <link href="form-validation.css" rel="stylesheet">
+  <link rel="stylesheet" href="./frontend/assets/dist/css/jquery-ui.css">
+  <link  type="text/html" href="./frontend/form-validation.css" rel="stylesheet">
 
 
 
@@ -21,7 +21,7 @@
 
 
   <!-- Bootstrap core CSS -->
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./frontend/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
@@ -31,7 +31,7 @@
   <div class="container">
     <main>
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="./assets/img/hce_logo_03.png" alt="" height="100">
+        <img class="d-block mx-auto mb-4" src="./frontend/assets/img/hce_logo_03.png" alt="" height="100">
         <h2>Danh sách sinh viên</h2>
       </div>
 
@@ -44,7 +44,7 @@
               Add Students
             </button>
             <!-- Modal -->
-            <!-- <div class="modal" id="modalSV" tabindex="-1"> -->
+            <div class="modal" id="modalSV" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -120,6 +120,13 @@
         </tr>
       </tbody>
       </table>
+      <nav aria-label="Page navigation example">
+        <ul id="ulPagination" class="pagination">
+          <li class="page-item"><a class="page-link" href="#" onclick="goPrev()">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#"><span id="spanCurPage">1</span></a></li>           
+          <li class="page-item"><a class="page-link" href="#" onclick="goNext()">Next</a></li>
+        </ul>
+      </nav>
   </div>
   </main>
 
@@ -133,13 +140,13 @@
   </footer>
   </div>
 
-  <script src="assets/dist/js/jquery-3.6.4.js"></script>
-  <script src="assets/dist/js/jquery-ui.js"></script>
-  <script src="assets/dist/js/jquery.tmpl.js"></script>
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./frontend/assets/dist/js/jquery-3.6.4.js"></script>
+  <script src="./frontend/assets/dist/js/jquery-ui.js"></script>
+  <script src="./frontend/assets/dist/js/jquery.tmpl.js"></script>
+  <script src="./frontend/assets/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="form-validation.js"></script>
-  <script src="sv.js"></script>
+  <script type="text/html"rc="./frontend/form-validation.js"></script>
+  <script src="./frontend/sv.js"></script>
   <script id="svTemplate" type="text/x-jQuery-tmpl">
     <tr>
       <th scope="row">${STT}</th>
